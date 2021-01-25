@@ -1,0 +1,46 @@
+Aim - To use K-Nearest Neighbours algorithm to classify cars into 4 categories based upon certain features
+
+# Dataset
+Car Evaluation Data Set from the UCI Machine Learning Repository
+
+Car properties:
+CAR car acceptability
+. PRICE overall price
+. . buying buying price
+. . maint price of the maintenance
+. TECH technical characteristics
+. . COMFORT comfort
+. . . doors number of doors
+. . . persons capacity in terms of persons to carry
+. . . lug_boot the size of luggage boot
+. . safety estimated safety of the car
+
+Class Values:
+unacc, acc, good, vgood
+
+Attributes:
+buying: vhigh, high, med, low.
+maint: vhigh, high, med, low.
+doors: 2, 3, 4, 5more.
+persons: 2, 4, more.
+lug_boot: small, med, big.
+safety: low, med, high.
+
+# KNN
+KNN stands for K-Nearest Neighbors. KNN is a machine learning algorithm used for classifying data. Rather than coming up
+with a numerical prediction such as a students grade or stock price it attempts to classify data into certain categories.
+
+The algorithm works best when we can identify clusters of points in the dataset.
+
+Although the KNN algorithm is very good at performing simple classification tasks it has many limitations. One of which
+is its Training/Prediction Time. Since the algorithm finds the distance between the data point and every point in the
+training set it is very computationally heavy. Unlike algorithms like linear regression which simply apply a function to
+a given data point the KNN algorithm requires the entire data set to make a prediction. This means every time we make a
+prediction we must wait for the algorithm to compare our given data to each point. In data sets that contain millions of
+elements this is a HUGE drawback.
+
+Another drawback of the algorithm is its memory usage. Due to the way it works (outlined above) it requires that the
+entire data set be loaded into memory to perform a prediction. It is possible to batch load our data into memory but
+that is extremely time consuming.
+
+Here we are trying to classify cars based on a few properties, to say whether they are unacc, acc, good, vgood

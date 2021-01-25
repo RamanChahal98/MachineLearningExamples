@@ -1,0 +1,13 @@
+Aim - To use SVM to classify if a cancer cell is malignant or benign
+
+# Dataset
+Breast Cancer Data Set from Sklearn
+
+# SVM
+SVM stands for a support vector machine. SVM's are typically used for classification tasks similar to K Nearest
+Neighbors. They work very well for high dimensional data and allow for us to classify data that does not have a
+linear correspondence.
+
+A SVM has a large list of applicable uses. However, in machine learning it is typically used for classification.
+It is a powerful tool that is a good choice for classifying complicated data with a high degree of dimensions(features).
+Note that K-Nearest Neighbors does not perform well on high-dimensional data.
